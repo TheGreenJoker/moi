@@ -14,4 +14,16 @@
     --color-border-strong: rgba(0, 255, 156, 0.3);
     --color-dashed: #37FF8B;
     --font-main: 'Orbitron', sans-serif;
+    --color-button-stroke: rgba(255, 255, 255, 0.6);
+    --color-animation: var(--color-dashed);
+    --font-size-button: 2em;
+    --border-right: 6px;
+    --cursor-size: 20px;
+    --element-size: 10px;
+    --glow-color: rgba(0, 255, 156, 0.6);
+    --glow-color-light: rgba(0, 255, 156, 0.3);
+    --font-size-header: 2rem;
+    --padding-header: 1.5rem;
+    --link-color: #a0ffd7;
+    --link-hover-color: var(--color-primary);
 }

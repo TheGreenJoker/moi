@@ -1,15 +1,19 @@
+/* Animations
+--------------------------------------------------------*/
 @keyframes glow-fade {
     from {
-        text-shadow: 0 0 6px rgba(0, 255, 156, 0.3);
+        text-shadow: 0 0 6px var(--glow-color-light);
     }
     to {
-        text-shadow: 0 0 12px rgba(0, 255, 156, 0.6);
+        text-shadow: 0 0 12px var(--glow-color);
     }
 }
 
+/* Custom Cursor
+--------------------------------------------------------*/
 #cursor {
-    width: 20px;
-    height: 20px;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
     background-color: transparent;
     border-color: transparent;
     border-radius: 50%;
@@ -20,13 +24,15 @@
     animation: glow-fade 2s ease-in-out infinite alternate;
 }
 
+/* Element
+--------------------------------------------------------*/
 .element {
     position: absolute;
     background-color: transparent;
     pointer-events: none;
-    width: 10px;
-    height: 10px;
-    color: var(--color);
+    width: var(--element-size);
+    height: var(--element-size);
+    color: var(--color-primary);
     font-size: 20px;
     transition: 1s;
 }

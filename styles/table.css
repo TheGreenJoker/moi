@@ -87,6 +87,21 @@ body {
     font-size: 1.1rem;
 }
 
+.futuristic-table tfoot {
+    background: rgba(0, 255, 156, 0.15);
+    color: #00ff9c;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+    padding: 12px;
+    border-top: 2px solid rgba(0, 255, 156, 0.3);
+}
+
+.footer-text {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 6px rgba(0, 255, 156, 0.4);
+}
+
 /* Footer
 --------------------------------------------------------*/
 

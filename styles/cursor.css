@@ -1,0 +1,22 @@
+#cursor {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.1s linear;
+}
+
+.element {
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    color: #00ff9c;
+    font-size: 20px;
+    transition: 1s;
+}

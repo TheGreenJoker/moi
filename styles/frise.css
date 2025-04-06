@@ -1,0 +1,98 @@
+body {
+    background-color: #0d0f11;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ff9c;
+    padding: 2rem;
+    line-height: 1.3em;
+    min-width: 920px;
+}
+
+.history-tl-container {
+    font-family: 'Orbitron', sans-serif;
+    width: 50%;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.history-tl-container ul.tl {
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.history-tl-container ul.tl li {
+    list-style: none;
+    margin: auto;
+    margin-left: 200px;
+    min-height: 50px;
+    border-left: 1px dashed #37FF8B;
+    padding: 0 0 50px 30px;
+    position: relative;
+    color: #e0ffe5;
+    text-shadow: 0 0 6px rgba(0, 255, 156, 0.3);
+}
+
+.history-tl-container ul.tl li:last-child {
+    border-left: 0;
+}
+
+.history-tl-container ul.tl li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(0, 255, 156, 0.74);
+    border-radius: 500%;
+    background: #00ff9c;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.history-tl-container ul.tl li:hover::before {
+    border-color: #00ff9c;
+    transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-title {
+    color: #00ff9c;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 0 0 6px rgba(0, 255, 156, 0.4);
+}
+
+ul.tl li .item-detail {
+    color: rgba(0, 180, 111, 0.74);;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+ul.tl li .timestamp {
+    color: #a0ffd7;
+    position: absolute;
+    width: 100px;
+    left: -10dvw;
+    text-align: right;
+    font-size: 12px;
+    text-shadow: 0 0 6px rgba(0, 255, 156, 0.4);
+}
+
+ul.tl li:hover {
+    background-color: rgba(0, 255, 156, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+ul.tl li:hover .item-title {
+    color: #37FF8B;
+    animation: glow-fade 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow-fade {
+    from {
+        text-shadow: 0 0 6px rgba(0, 255, 156, 0.3);
+    }
+    to {
+        text-shadow: 0 0 12px rgba(0, 255, 156, 0.6);
+    }
+}

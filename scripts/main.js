@@ -69,24 +69,9 @@ App.setup = function() {
     };
 
 App.setColor = function() {
-
     var hue = 200 + this.stepCount / 30;
     var color = 'hsla(' + hue + ', 95%, 50%, 0.8)';
-    
-    const allh1 = document.querySelectorAll("h1");
-    allh1.forEach(h1 => {
-        h1.style.color = color;
-    });
-
-    const allh2 = document.querySelectorAll("h2");
-    allh2.forEach(h2 => {
-        h2.style.color = color;
-    });
-
-    const alla = document.querySelectorAll("a");
-    alla.forEach(a => {
-        a.style.color = color;
-    });
+    document.documentElement.style.setProperty('--color', color);
 }
 
 App.evolve = function() {

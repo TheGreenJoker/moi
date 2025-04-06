@@ -40,7 +40,7 @@ particlesJS('particles-js', {
             bounce: false
         },
         color: {
-            value: '#00f7ff'
+            value: '#00ff9c'
         },
         line_linked: {
             enable: false

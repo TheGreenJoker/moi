@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/frise.css">
+    <link rel="stylesheet" href="styles/futuristic.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link rel="stylesheet" href="styles/particles.css">
     <title>Frise</title>
 </head>
 <body>
+    <header class="futuristic-header">
+        <div class="table-header">
+            <h2 class="futuristic-title">Hitroire de L’Internet</h2>
+            <p class="futuristic-subtitle">1973 ➔ 2025</p>
+        </div>
+        <a href="table.html">
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Table&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Table&nbsp;</span>
+            </button>
+        </a>
+    </header>
+
     <main class="history-tl-container">
         <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
         <ul class="tl">
@@ -156,14 +173,6 @@
             
             <li class="tl-item" ng-repeat="item in retailer_history">
                 <div class="timestamp">
-                    6 juillet <br> 2016
-                </div>
-                <div class="item-title">Lancement de Pokémon Go</div>
-                <div class="item-detail">Le jeu mobile Pokémon Go devient un phénomène mondial en utilisant la réalité augmentée pour permettre aux joueurs de capturer des Pokémon dans le monde réel.</div>
-            </li>
-            
-            <li class="tl-item" ng-repeat="item in retailer_history">
-                <div class="timestamp">
                     12 mai <br> 2017
                 </div>
                 <div class="item-title">L’attaque par ransomware WannaCry</div>
@@ -217,16 +226,13 @@
                 <div class="item-title">Internet quantique</div>
                 <div class="item-detail">Des chercheurs travaillent sur l'Internet quantique, une technologie révolutionnaire qui pourrait permettre des communications ultra-sécurisées et extrêmement rapides.</div>
             </li>
-            
-            <li class="tl-item" ng-repeat="item in retailer_history">
-                <div class="timestamp">
-                    18 février <br> 2026
-                </div>
-                <div class="item-title">L’Internet totalement intégré aux objets</div>
-                <div class="item-detail">L'Internet des objets (IoT) continue d'évoluer, avec chaque appareil électronique étant connecté à Internet, transformant ainsi chaque aspect de la vie quotidienne.</div>
-            </li>
         </ul>
     </main>
+
+    <footer class="futuristic-footer">
+        <p>&copy; 2025 TheGreenJocker - Tous droits réservés</p>
+    </footer>
     
+    <div id="particles-js"><script src="scripts/background.js"></script></div>
 </body>
 </html>

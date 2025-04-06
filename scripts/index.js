@@ -1,7 +1,7 @@
 
 //<h1 id="typewriter"></h1>
 
-const message = "Bonjour, monde !";
+const message = "Julien Menasri";
 const typewriter = document.getElementById("typewriter");
 let index = 0;
 

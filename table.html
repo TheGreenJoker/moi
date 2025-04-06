@@ -3,44 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/futuristic.css">
+    <link rel="stylesheet" href="styles/particles.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <title>Table</title>
 </head>
 <body>
-    <div class="table-header">
-        <h2 class="futuristic-title">Données Utilisateurs</h2>
-        <p class="futuristic-subtitle">Liste mise à jour en temps réel depuis la base de données</p>
-    </div>
+    <header class="futuristic-header">
+        <div class="table-header">
+            <h2 class="futuristic-title">Table de  vérité d'un registre 4 bit</h2>
+            <p class="futuristic-subtitle">LD:CONTROLE; Dx:DATA; Qx:ETAT(Δt); Sx:ETAT(Δt+1)</p>
+        </div>
+        <a href="frise.html">
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Frise&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Frise&nbsp;</span>
+            </button>
+        </a>
+    </header>
       
     <table class="futuristic-table">
         <thead>
             <tr>
-                <th>Nom</th>
-                <th>Âge</th>
-                <th>Occupation</th>
+                <th>LD</th>
+                <th>D0</th>
+                <th>D1</th>
+                <th>D2</th>
+                <th>D3</th>
+                <th>Q0</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th>S0</th>
+                <th>S1</th>
+                <th>S2</th>
+                <th>S3</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Ava</td>
-                <td>28</td>
-                <td>Développeuse</td>
+                <td>0</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
             </tr>
             <tr>
-                <td>Liam</td>
-                <td>32</td>
-                <td>Designer</td>
+                <td>0</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="13"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="3" class="footer-text">Données mises à jour le 06 avril 2025</td>
+                <td colspan="1">ā≺=≻/a, donc:</td>
+                <td colspan="4" class="footer-text">Q1(t+1) = (LD • D1) + (/LD • Q1)</td>
+                <td colspan="4" class="footer-text">Ainsi, pour tout z ∈ {1; 2; 3; 4}, on a:</td>
+                <td colspan="4" class="footer-text">Qz(t+1) = (LD • Dz) + (/LD • Qz)</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <div class="table-header">
+        <h2 class="futuristic-title">Table de  vérité d'un Multiplexeur</h2>
+        <p class="futuristic-subtitle">S:CONTROLE; iX:ENTREEx; Y:SORTIE;</p>
+    </div>
+    <table class="futuristic-table">
+        <thead>
+            <tr>
+                <th>S</th>
+                <th>i0</th>
+                <th>i1</th>
+                <th>Y</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>X</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>X</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>X</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>X</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="footer-text">Y=(/S • i0)+(S • i1)</td>
             </tr>
         </tfoot>
     </table>
     
+    <br><br><br><br>
+
     <footer class="futuristic-footer">
-        <p>&copy; 2025 Nom de l'entreprise - Tous droits réservés</p>
+        <p>&copy; 2025 TheGreenJocker - Tous droits réservés</p>
     </footer>
+
+    <div id="particles-js"><script src="scripts/background.js"></script></div>
 </body>
 </html>
